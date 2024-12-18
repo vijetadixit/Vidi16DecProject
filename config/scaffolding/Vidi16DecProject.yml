@@ -7,3 +7,59 @@ packages:
   gitUrl: https://github.com/vijetadixit
   gitUsername: vijetadixit
   gitBranch: main
+services:
+- serviceName: project.vidi16dec.integrations:DAF1
+  packages:
+  - name: Vidi16DecProject
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2024
+configurationVariables:
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.keyStore
+  : ""
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.trustStore
+  : ""
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.user
+  : SYSTEM
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.serverName
+  : 52.188.149.198
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.databaseName
+  : ORCLCDB
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.password
+  : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.Vidi16DecProject.project.vidi16dec.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16Dec_V.connectionEnabled
+  : "false"
